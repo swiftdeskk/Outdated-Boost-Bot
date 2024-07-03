@@ -1,0 +1,51 @@
+	{
+  "license": "",
+  "proxyless": false,
+  "timeout": 60,
+  "capService": "hcoptcha",
+  "capKey": "",
+  "inviteFieldName": "",
+  "port" : "8080",
+  "discordSettings": {
+    "token": "",
+    "botStatus": "playing",
+    "botActivity": "with Boosts",
+    "supportServer": "https://discord.gg/moonlygg",
+    "guildID": "",
+    "owners": [""],
+    "embedColor": "#6c02ff",
+    "logsChannel": ""
+  },
+  "customPersonalization": {
+    "onliner": true,
+    "displayName" : "Galaxy Universe",
+    "customBio": "**Galaxy Universe - Join our Discord community, exclusive tools, server boosts, and more:** __discord.gg/galaxyuniv__",
+    "customPfp": ["icon.png"],
+    "customBanner": ["banner.jpg"],
+    "status": [],
+    "statusEmoji": []
+  },
+  "sellixAutomationSettings": {
+    "enabled": false,
+    "shopName": "",
+    "apiKey": "",
+    "productSettings": {
+      "3_Month_Product_ID": "",
+      "3_Month_Product_Price" : 1,
+      "1_Month_Product_ID": "",
+      "1_Month_Product_Price" : 1
+    }
+  },
+  "sellappAutomationSettings": {
+    "enabled": false,
+    "apiKey": "",
+    "productSettings": {
+      "3_Month_Product_ID": "",
+      "1_Month_Product_ID": ""
+    }
+  },
+  "sellpassAutomationSettings": {
+    "enabled": false,
+    "apiKey": ""
+  }
+}

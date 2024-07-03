@@ -1,0 +1,46 @@
+# Sellix
+1. Create a product named in any format but the duration of the boosts has to be in the title, example: Server Boosts (3 Month) or 3 Month Server Boosts. 
+2. Click on 'Content', select 'Serials'. Set the delimiter to 'New Line'.
+3. Set the minimum quantity to 1 & maximum quantity to 999.
+4. Add a custom field and name it whatever you want (this field should be set for taking the server invite link as an input) Set 'type' to 'Text'. Copy and paste that name in config.json, 'inviteFieldName' field.
+5. In Developer > Webhooks and press 'Add Webhooks Endpoint'
+6. Choose Type 'Sellix' and input {ngrok webhook url}/sellix.
+7. Choose 'Order" event and select 'order:paid'.
+8. Retrieve API Key from Settings > Security
+9. Input store name exactly as you see it under 'sellixAutomationSettings' > 'shopName'
+9. Input API Key in config under 'sellixAutomationSettings' > 'apiKey'
+10. Input Product ID's in config under 'sellixAutomationSettings' > 'productSettings' > '3_Month_Product_ID' or '1_Month_Product_ID'
+11. Input Product Price in config under 'sellixAutomationSettings' > 'productSettings' > '3_Month_Product_Price' or '1_Month_Product_Price'
+
+# Sellapp
+1. Create a product named in any format but the duration of the boosts has to be in the title, example: Server Boosts (3 Month) or 3 Month Server Boosts. 
+2. Click on 'Content', select 'Serials'. Set the delimiter to 'Comma'.
+3. Set the minimum quantity to 1 & maximum quantity to 999.
+4. Add a custom field and name it whatever you want (this field should be set for taking the server invite link as an input) Set 'type' to 'Text'. Copy and paste that name in config.json, 'inviteFieldName' field.
+5. In Store Settings > Developer > Webhook URL's and press 'New Webhook'
+6. Input {ngrok webhook url}/sellapp and select 'Order Completed' Option.
+8. Retrieve API Key from Store Settings > Developer > Create API Key. Select all the options and input 'Boost Bot' in 'Key Name' field.
+9. Input API Key in config under 'sellappAutomationSettings' > 'apiKey'
+10. Input Product ID's in config under 'sellappAutomationSettings' > 'productSettings' > '3_Month_Product_ID' or '1_Month_Product_ID'
+
+# Sellpass
+1. Create a product named in this format: {Amount} Boosts | {Duration} Months, example: 14 Boosts | 3 Months. 
+2. Click on 'Content', select 'Dynamic Product' . In the 'Dynamic Webhook URL' field input {ngrok webhook url}/sellpass
+3. Set the maximum quantity to 1.
+4. Add a custom field and name it whatever you want (this field should be set for taking the server invite link as an input) Set 'type' to 'Text'. Copy and paste that name in config.json, 'inviteFieldName' field.
+5. Add your Sellpass API key into the config, key can be found in Settings > Security 
+
+Remember, the port you set inside of the config you must also use for Ngrok. (ngrok http 8080 for example)
+Proxy Format: user:pass@host:port
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+# Config (Most of it is Self Explanatory) 
+- Proxyless: True/False (True = It will not use proxies, however you'll need to add proxies to the file for captcha solving or captcha solving will fail)
+- Capservice: capsolver or hcoptcha or capmonster |https://hcoptcha.online| |https://capmonster.cloud/en/| |https://capsolver.com| (Add funds and Add your capKey to config) 
+- Port: Select whichever port you like. 
+- Logs Channel: Make this private, this is where it will display the advanced logs of the boosts (Including the tokens) 
+- Onliner: True/False - True will online the tokens, will set a custom activity such as "Playing Minecraft" If no Custom Status/Bio is set
+- Custom Bio/Display name - Leave Blank for nothing to bet set
+- CustomPfp/customBanner - Add the png files to Banner/Avatar folders, input the name of the file. For example: logo.png (Must be Png or jpg) 
+- Status - This is a normal Status not a activity Status 
+- statusEmoji - This will not work with custom emojis, you must input the physical emoji (For Example: "🔥")
